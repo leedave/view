@@ -19,7 +19,7 @@ class View
      * @param array $attributes
      * @return string
      */
-    public function loadView(string $file, array $attributes = []) : string
+    public static function loadView(string $file, array $attributes = []) : string
     {
         $content = file_get_contents($file);
         $translator = T::getInstance();
