@@ -12,14 +12,14 @@ use Leedch\Translate\Translate as T;
 class View
 {
     protected $translations;
-    
+
     /**
      * Loads a Template, inserts Attributes in {{$ }}
      * @param string $file
      * @param array $attributes
      * @return string
      */
-    public static function loadView(string $file, array $attributes = []) : string
+    public static function loadView(string $file, array $attributes = []): string
     {
         $content = file_get_contents($file);
         $translator = T::getInstance();
